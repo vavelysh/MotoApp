@@ -12,7 +12,7 @@ services:
       - ./mssql_volume:/var/opt/mssql
   api:
     build:
-      context: ./backend
+      context: ./backend/Motorsport.WebApi
       dockerfile: Dockerfile
     container_name: MotorsportAPI
     depends_on:

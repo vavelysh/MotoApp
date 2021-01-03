@@ -1,10 +1,10 @@
 ﻿# Stage 1: Define base image that will be used for production
-FROM microsoft/dotnet/sdk AS base
+FROM mcr.microsoft.com/dotnet/sdk AS base
 WORKDIR /app
 # Stage 2: Build and publish the code
-FROM microsoft/dotnet/sdk AS build
+FROM mcr.microsoft.com/dotnet/framework/samples:aspnetapp AS build
 WORKDIR /app
-COPY Motorsport.WebApi.csproj .
+COPY Motorsport.WebApi.csproj ./
 RUN dotnet restore
 COPY . .
 RUN dotnet build -c Release
