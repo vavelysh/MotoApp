@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ef15bbba.chunk.css",
+    "main.js": "/static/js/main.8317d591.chunk.js",
+    "main.js.map": "/static/js/main.8317d591.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a0503699.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a0503699.js.map",
+    "static/js/2.b64813ef.chunk.js": "/static/js/2.b64813ef.chunk.js",
+    "static/js/2.b64813ef.chunk.js.map": "/static/js/2.b64813ef.chunk.js.map",
+    "static/js/3.03e33dd4.chunk.js": "/static/js/3.03e33dd4.chunk.js",
+    "static/js/3.03e33dd4.chunk.js.map": "/static/js/3.03e33dd4.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.ef15bbba.chunk.css.map": "/static/css/main.ef15bbba.chunk.css.map",
+    "static/js/2.b64813ef.chunk.js.LICENSE.txt": "/static/js/2.b64813ef.chunk.js.LICENSE.txt",
+    "static/media/angry-driver.6bd470e5.png": "/static/media/angry-driver.6bd470e5.png",
+    "static/media/finish-flag.3deaf89a.png": "/static/media/finish-flag.3deaf89a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a0503699.js",
+    "static/js/2.b64813ef.chunk.js",
+    "static/css/main.ef15bbba.chunk.css",
+    "static/js/main.8317d591.chunk.js"
+  ]
+}
