@@ -39,7 +39,7 @@ I could use a ready-made API, but I preferred to create my own. I used the Code 
 
 
 ## How to run
-This project requires [docker](https://docs.docker.com/engine/install) installed.
+This project requires [docker](https://docs.docker.com/engine/install) and [docker-compose](https://docs.docker.com/compose/install) installed.
 The containers will build a production version of the project.
 
 Clone the repository to a directory of your choosing
