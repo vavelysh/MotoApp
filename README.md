@@ -1,5 +1,5 @@
 # Motorsport SofaScore Clone
-A clone of the "Motorsport" section of a [SofaScore](https://www.sofascore.com/motorsport) app written in React and .NET 5
+A clone of the "Motorsport" section from [SofaScore](https://www.sofascore.com/motorsport) app written in React and ASP.NET
 ## Table of Contents
 - [Description](#description)
 - [Motivation](#motivation)
@@ -11,21 +11,19 @@ A clone of the "Motorsport" section of a [SofaScore](https://www.sofascore.com/m
 I wrote an API for this application using ASP.NET Web Api together with SQL Server 2019 database.
 The application does not have registration and login functionality. I mainly focused on the look and feel of the original app's behavior.
 
-![App Screen Shot](https://github.com/JL978/spotify-clone-client/blob/master/demo/FrontPage.png)
-*The main screen (non-authenicated) of the app*
+![App demonstration](https://github.com/vavelysh/Motorsport-App/blob/master/readme-resource/demo-pic.png)
+*App demonstration*
 
-Like the official app, if a user is not authenticated, they can still browse and look up different playlists, albums, artists and users. Non authenticated users cannot control the player and go to certain protected routes - if they tried to navigate to these routes, a tooltip pops up prompting login.
+With dark mode
 
-![App Demo](https://github.com/JL978/spotify-clone-client/blob/master/readme-resource/siema.gif)
-*Non-authenticated app demonstration*
+![Dark Mode demonstration](https://github.com/JL978/spotify-clone-client/blob/master/readme-resource/dark-mode.gif)
+*Dark Mode demonstration*
 
-If a user login to a premium account (due to the limitation of the available API, free accounts cannot do much), user can access certain routes to their own playlists, saved items, etc. and use the app as a remote control player to any playing official (no direct streaming is available through the API)
+The application uses random results limited by the composition of players for a given season.
 
-![Authenticated app demonstration](https://github.com/JL978/spotify-clone-client/blob/master/demo/Authed.gif)
-*Authenticated app demonstration*
+![Work App Demo](https://github.com/JL978/spotify-clone-client/blob/master/readme-resource/present.gif)
+*Work App Demo*
 
-![Remote player demonstration](https://github.com/JL978/spotify-clone-client/blob/master/demo/RemotePlay.gif)
-*Remote player demonstration*
 
 ## Motivation
 I created this clone to learn the React ecosystem. I decided to choose styled-components because the original application uses it and I feel very comfortable in it.
