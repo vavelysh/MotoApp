@@ -23,14 +23,7 @@ services:
       - '.:/client/'
       - '/client/node_modules'
   mssql:
-    build:
-      context: ./mssql
-      dockerfile: Dockerfile
-    restart: always
-    container_name: mssql
+    build: ./mssql
     ports:
-      - "1433:1433"
-    expose:
-      - 1433
-    volumes:
-      - ./mssql_volume:/var/opt/mssql
+    - '1700:1433'
+    container_name: mssql

@@ -5,3 +5,10 @@ build
 .dockerignore
 Dockerfile
 Dockerfile.prod
+.env
+.gitignore
+.vs
+.vscode
+*/bin
+*/obj
+**/.toolstarget
