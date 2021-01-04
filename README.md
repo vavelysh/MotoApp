@@ -16,12 +16,12 @@ The application does not have registration and login functionality. I mainly foc
 
 With dark mode
 
-![Dark Mode demonstration](https://github.com/JL978/spotify-clone-client/blob/master/readme-resource/dark-mode.gif)
+![Dark Mode demonstration](https://github.com/vavelysh/Motorsport-App/blob/master/readme-resource/dark-mode.gif)
 *Dark Mode demonstration*
 
 The application uses random results limited by the composition of players for a given season.
 
-![Work App Demo](https://github.com/JL978/spotify-clone-client/blob/master/readme-resource/present.gif)
+![Work App Demo](https://github.com/vavelysh/Motorsport-App/blob/master/readme-resource/present.gif)
 *Work App Demo*
 
 
