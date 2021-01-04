@@ -25,7 +25,7 @@ namespace Motorsport.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
 	        var server = Configuration["DBServer"] ?? "localhost";
-	        var port = Configuration["DBPort"] ?? "1443";
+	        var port = Configuration["DBPort"] ?? "1433";
 	        var user = Configuration["DBUser"] ?? "adi";
 	        var password = Configuration["DBPassword"] ?? "123";
 	        var database = Configuration["Database"] ?? "MotorsportDB";
