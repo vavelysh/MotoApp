@@ -24,6 +24,10 @@ namespace Motorsport.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+	        services.AddDbContext<MotorsportContext>(opt =>
+	        {
+		        opt.UseSqlServer("Name=Database");
+	        });
             services.AddCors(options =>
             {
                 options.AddDefaultPolicy(
@@ -40,10 +44,6 @@ namespace Motorsport.WebApi
                 {
                     setup.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
                 });
-            services.AddDbContext<MotorsportContext>(opt =>
-            {
-                opt.UseSqlServer("Name=Database");
-            });
             services.AddScoped<IApplication, ApplicationRepository>();
             services.AddSwaggerGen(c =>
             {

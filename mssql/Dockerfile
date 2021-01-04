@@ -1,8 +1,9 @@
-FROM mcr.microsoft.com/mssql/server
-WORKDIR /usr/src/msql
-ENV SA_PASSWORD Adi12345!!
-ENV ACCEPT_EULA Y
-COPY . ./
+FROM mcr.microsoft.com/mssql/server:2019-latest
 USER root
-RUN chmod +x /usr/src/msql/import-data.sh
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+ENV ACCEPT_EULA Y
+ENV SA_PASSWORD 1Secure@Password1
+COPY . /usr/src/app
+RUN chmod +x /usr/src/app/import-data.sh
 CMD /bin/bash ./docker-entrypoint.sh

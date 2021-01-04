@@ -1,3 +1,5 @@
+CREATE DATABASE MotorsportDB;
+GO
 USE [MotorsportDB]
 GO
 /****** Object:  Table [dbo].[__EFMigrationsHistory]    Script Date: 03.01.2021 22:47:09 ******/

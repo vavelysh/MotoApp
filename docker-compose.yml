@@ -1,15 +1,6 @@
 version: "3.7"
 
 services:
-  mssql:
-    build:
-      context: ./mssql
-      dockerfile: Dockerfile
-    container_name: mssql
-    ports:
-      - "1900:90"
-    volumes:
-      - ./mssql_volume:/var/opt/mssql
   api:
     build:
       context: ./backend/Motorsport.WebApi
@@ -25,11 +16,21 @@ services:
       dockerfile: Dockerfile
     container_name: React
     ports:
-      - '5001:3000'
-    environment:
-      - NODE_ENV=production
+      - '8787:80'
     depends_on:
       - api
     volumes:
-      - ./client/src:/client/src
+      - '.:/client/'
       - '/client/node_modules'
+  mssql:
+    build:
+      context: ./mssql
+      dockerfile: Dockerfile
+    restart: always
+    container_name: mssql
+    ports:
+      - "1433:1433"
+    expose:
+      - 1433
+    volumes:
+      - ./mssql_volume:/var/opt/mssql
