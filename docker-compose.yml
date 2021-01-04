@@ -6,6 +6,11 @@ services:
       context: ./backend/Motorsport.WebApi
       dockerfile: Dockerfile
     container_name: MotorsportAPI
+    environment:
+      DBServer: "mssql"
+      DBUser: "sa"
+      DBPort: "1433"
+      DBPassword: "1Secure@Password1"
     depends_on:
       - mssql
     ports:

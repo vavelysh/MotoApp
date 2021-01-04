@@ -24,9 +24,14 @@ namespace Motorsport.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+	        var server = Configuration["DBServer"] ?? "localhost";
+	        var port = Configuration["DBPort"] ?? "1443";
+	        var user = Configuration["DBUser"] ?? "adi";
+	        var password = Configuration["DBPassword"] ?? "123";
+	        var database = Configuration["Database"] ?? "MotorsportDB";
 	        services.AddDbContext<MotorsportContext>(opt =>
 	        {
-		        opt.UseSqlServer("Name=Database");
+		        opt.UseSqlServer($"Server={server},{port};Database={database};User Id={user};Password={password}");
 	        });
             services.AddCors(options =>
             {
