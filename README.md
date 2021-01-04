@@ -14,11 +14,6 @@ The application does not have registration and login functionality. I mainly foc
 ![App demonstration](https://github.com/vavelysh/Motorsport-App/blob/master/readme-resource/image.png)
 *App demonstration*
 
-With dark mode
-
-![Dark Mode demonstration](https://github.com/vavelysh/Motorsport-App/blob/master/readme-resource/dark.gif)
-*Dark Mode demonstration*
-
 The application uses random results limited by the composition of players for a given season.
 
 ![Work App Demo](https://github.com/vavelysh/Motorsport-App/blob/master/readme-resource/demo.gif)
