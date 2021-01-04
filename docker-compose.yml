@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: mssql
     ports:
-      - "1433:1433"
+      - "1900:90"
     volumes:
       - ./mssql_volume:/var/opt/mssql
   api:

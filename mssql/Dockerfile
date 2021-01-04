@@ -1,5 +1,8 @@
 FROM mcr.microsoft.com/mssql/server
-ENV SA_PASSWORD Adi123
+WORKDIR /usr/src/msql
+ENV SA_PASSWORD Adi12345!!
 ENV ACCEPT_EULA Y
-ENV MSSQL_PID Express
-ENTRYPOINT /bin/bash ./entrypoint.sh
+COPY . ./
+USER root
+RUN chmod +x /usr/src/msql/import-data.sh
+CMD /bin/bash ./docker-entrypoint.sh
