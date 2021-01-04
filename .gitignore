@@ -11,7 +11,7 @@ coverage
 
 # production
 [Bb]uild/
-
+mssql_volume
 # misc
 .DS_Store
 .env.local
