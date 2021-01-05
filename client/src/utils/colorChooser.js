@@ -7,7 +7,7 @@ export function colorChooser(team) {
     case 'PREMA Racing':
       return 'red';
     case 'Aston Martin':
-      return '#0fc81f';
+      return '#7B946E';
     case 'Alpine':
       return '#08B5F7';
     case 'Red Bull Racing':
