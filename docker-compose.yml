@@ -5,7 +5,7 @@ services:
     build:
       context: ./backend/Motorsport.WebApi
       dockerfile: Dockerfile
-    container_name: MotorsportAPI
+    container_name: asp-api
     environment:
       DBServer: "mssql"
       DBUser: "sa"
@@ -19,7 +19,7 @@ services:
     build:
       context: ./client
       dockerfile: Dockerfile
-    container_name: React
+    container_name: react-ui
     ports:
       - '8787:80'
     depends_on:
