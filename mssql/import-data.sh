@@ -1,5 +1,5 @@
 #!/bin/sh
-sleep 90s
+sleep 30s
 echo "Create schemas..."
 /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P 1Secure@Password1 -d master -i create-database.sql
 echo "Fill data..."
