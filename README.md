@@ -23,7 +23,6 @@ The application uses random results limited by the composition of players for a 
 * React (create-react-app CLI)
 	* react-router-dom
 	* redux
-		- [ ] Context API + useReducer instead of redux
 	* styled-components
 	* react-query
 	* axios
