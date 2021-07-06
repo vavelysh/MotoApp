@@ -33,7 +33,7 @@ The application uses random results limited by the composition of players for a 
 
 ## How to run
 This project requires [docker](https://docs.docker.com/engine/install) and [docker-compose](https://docs.docker.com/compose/install) installed.
-The containers will serve assets on production using up an nginx server.
+The containers will serve assets on production using up a nginx server.
 
 Clone the repository to a directory of your choosing
 
